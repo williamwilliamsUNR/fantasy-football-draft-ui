@@ -1,0 +1,1 @@
+PLAYER_DATA_PATH="/mnt/c/Development/fantasy-football/files/draft_board_data_ppr_10_2022.json"

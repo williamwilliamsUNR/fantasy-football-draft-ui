@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Draft Board | Plan It Out</title>
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"/>
+    </head>
+
+    <body>
+        <header>
+            <h1>ROUND {{ current_round }} </h1>
+        </header>
+        <div>
+            <table id="player_table">
+                <thead>
+                    <tr>
+                        <th>
+                            ADP
+                        </th>
+                        <th>
+                            Player
+                        </th>
+                        <th>
+                            Position
+                        </th>
+                        <th>
+                            Position<br />Depth Chart
+                        </th>
+                        <th>
+                            Team [BI]
+                        </th>
+                        <th>
+                            BI
+                        </th>
+                        <th>
+                            ADP Round/Pick
+                        </th>
+                        <th>
+                            Rank
+                        </th>
+                        <th>
+                            Andy
+                        </th>
+                        <th>
+                            Jason
+                        </th>
+                        <th>
+                            Mike
+                        </th>
+                        <th>
+                            Drafted High
+                        </th>
+                        <th>
+                            Drafted Low
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <input type="button" value="Submit Round 'My Guys'" id="submit_round_selection">
+        </div>
+        <script>
+            // This looks dumb, but it prevents the IDE from highlighting this red LOL.
+            let current_round = parseInt('{{ current_round }}');
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+        <script src="{{ url_for('static',filename='js/draft_planning.js') }}"></script>
+    </body>
+</html>

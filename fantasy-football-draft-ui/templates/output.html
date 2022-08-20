@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Draft Board | Plan It Out</title>
+    </head>
+
+    <body>
+        <header>
+            
+        </header>
+        <div>
+            <label for="output_file_path_name_input">Input Output File Path with File Name: </span>
+            <input type="text" id="output_file_path_name_input" name="output_file_path_name_input" value="./output_draft_plan.json">
+            <br />
+            <div id="message"></div>
+            <input type="button" id="submit_output_file" value="Generate Output File">
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="{{ url_for('static',filename='js/output.js') }}"></script>
+    </body>
+</html>

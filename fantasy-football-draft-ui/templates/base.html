@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Draft Board | Plan It Out</title>
+
+        <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/datepicker.css') }}"/> -->
+    </head>
+
+    <body>
+        <header>
+
+        </header>
+        <div>
+            <h2>Draft Configurations:</h2>
+            <div>
+                <h3>Number of Players</h3>
+                <span for="8_players">&nbsp;&nbsp;8</span><input id="8_players" name="number_players" value="8" type="radio" checked>
+                <br />
+                <span for="10_players">10</span><input id="10_players" name="number_players" value= "10" type="radio">
+                <br />
+                <span for="12_players">12</span><input id="12_players" name="number_players" value= "12" type="radio">
+                <br />
+                <span for="14_players">14</span><input id="14_players" name="number_players" value= "14" type="radio">
+            </div>
+            <br/ >
+            <div>
+                <h3>Number of Rounds</h3>
+                <input type="number" min="1" max="30" value="16" id="number_rounds_input">
+            </div>
+            <br/ >
+            <div>
+                <h3>Draft Position</h3>
+                <input type="number" min="1" max="14" value="1" id="draft_position_input">
+            </div>
+            <br/ >
+            <div style="color: red;" id="error_message" hidden></div>
+            <input type="button" value="Begin Planning" id="start_draft_planning">
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="{{ url_for('static',filename='js/dashboard.js') }}"></script>
+    </body>
+</html>
